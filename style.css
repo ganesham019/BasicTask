@@ -1,0 +1,386 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(./fonts/Open_Sans/static/OpenSans-Bold.ttf) format('truetype');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url(./fonts/Open_Sans/static/OpenSans-SemiBold.ttf) format('truetype');
+    font-weight: bold;
+  }
+
+:root {
+    --sky_blue: #2086fb;
+    --warm-gray: rgba(136, 136, 136, 0.5);
+    --black-60: rgba(0, 0, 0, 0.6);
+    --bg-white: #ffffff;
+    --clr-white: #ffffff;
+    --small_title: #4a4a4a;
+    --gray_50: rgba(136, 136, 136, 0.5);
+    --black-five: #323232;
+}
+
+* {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(136, 136, 136, 0.5);
+}
+
+header::after {
+    clear: both;
+}
+
+.header_wrapper {
+    height: 68px;
+    padding: 12px 40px;
+}
+
+.header_logo_box {
+    float: left;
+}
+
+.header_nav {
+    display: inline-block;
+    width: calc(100% - 210px);
+ 
+}
+.header_nav ul {
+    margin: auto;
+    max-width: 638px;
+}
+
+.header_nav ul li {
+    font-family:  OpenSans-Bold;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: var(--clr-white);
+    display: inline;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 5.9px 0 9px;
+    text-transform: uppercase;
+}
+
+.header_nav ul li:hover {
+    color: var(--black-five);
+}
+
+.try_now_btn {
+    float: right;
+    padding: 10px 29.5px 12px 30.5px;
+    border-radius: 22px;
+    background-color: var(--sky_blue);
+}
+
+.try_now_btn_text {
+    font-family:  OpenSans-Bold;
+    font-size: 15px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+/* hero_Section */
+.hero {
+    height: 568px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid;
+}
+
+.hero_container {
+    margin: 215px auto 230px auto;
+}
+
+.hero_container h1 {
+    font-family: OpenSans-Semibold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--clr-white);
+    margin-bottom: 24px;
+}
+
+.hero_section {
+    background-image: url(./images/hero-4.png);
+    background-blend-mode: multiply;
+    background-color: var(--black-60);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.input_container {
+    height: 64px;
+    max-width: 936px;
+    margin: auto;
+    padding: 6px 5px 5px;
+    border-radius: 4px;
+    background-color: #ffffffb7;
+}
+
+.hero_input_box {
+    height: 52px;
+    background-color: var(--bg-white);
+}
+
+.hero_input_box input {
+    float: left;
+    max-width: 870px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+}
+
+.search_button {
+    float: right;
+    font-size: 18px;
+    padding: 16px;
+    color: var(--small_title);
+    overflow: hidden;
+}
+
+
+/* Article Section Css */
+.article_container {
+    max-width: 1440px;
+    overflow: auto;
+    margin: 42px auto;
+    padding: 0px 40px;
+    background-color: var(--bg-white);
+}
+
+.article_box {
+    width: calc(100% / 4);
+    height: 328px;
+    padding: 52px 20px;
+    float: left;
+    text-align: center;
+}
+
+.border--right {
+    border-right: solid 1px #dcdcdc;
+}
+
+.border--bottom {
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.article_box .article_title {
+    font-family:  OpenSans-Semibold;
+    font-size: 18px;
+    text-align: center;
+    color: var(--small_title);
+    margin: 24px auto 10px auto;
+}
+
+.article_box .article_para_text {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #858585;
+    max-width: 260px;
+    margin: auto;
+}
+
+.article_img_box {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+
+/* Request a Call section */
+.request_box {
+    overflow: auto;
+    padding: 64px 0 0;
+    background-color: var(--black-five);
+}
+
+.request_box h1 {
+    margin: auto auto 4px auto;
+    font-family: OpenSans-Semibold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.request_box .req_small_text {
+    font-family: OpenSans-Semibold;
+    padding-top: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.req_chat_btn {
+    margin: 48px auto 69px auto;
+    padding: 12px 0px;
+    max-width: 220px;
+    border-radius: 22px;
+    background-color: var(--sky_blue);
+}
+
+.req_chat_btn .req_chat_text {
+    padding: 20px auto;
+    font-family: OpenSans-SemiBold;
+    font-size: 15px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.copyright_wrapper {
+    padding: 25px 40px;
+    background-color: #252525;
+}
+
+.copyright_wrapper .copyright_text {
+    font-family: OpenSans-SemiBold;
+    font-size: 14px;
+    color: var(--clr-white);
+}

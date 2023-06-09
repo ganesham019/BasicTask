@@ -1,0 +1,55 @@
+/* Request a Call section */
+.request_call_section {
+    position: relative;
+}
+
+.request_box {
+    overflow: auto;
+    padding: 64px 0 0;
+    background-color: var(--black-five);
+}
+
+.request_box h1 {
+    margin: auto auto 4px auto;
+    font-family: OpenSans-Semibold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.request_box .req_small_text {
+    font-family: OpenSans-Semibold;
+    padding-top: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+
+.copyright_wrapper {
+    padding: 25px 40px;
+    background-color: #252525;
+}
+
+.copyright_wrapper .copyright_text {
+    font-family: OpenSans-SemiBold;
+    font-size: 14px;
+    color: var(--clr-white);
+}
+
+.back_to_top {
+    position: absolute;
+    right: 4%;
+    bottom: 15%;
+    width: 16px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 0px 7px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #858585;
+    color: var(--bg-white);
+}
+
+
+

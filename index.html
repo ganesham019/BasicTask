@@ -14,105 +14,101 @@
 </head>
 
 <body>
-    <main>    
+    <main>
         <header>
-            <div class="header_wrapper header_bg_clr">
-                <div class="header_logo_box">
-                    <img class="" src="./images/tech-startup-logo-design-toronto-featured.png" alt="">
-                </div>
-                <div class="header_nav">
-                    <ul>
-                        <li class="header__nav__link">Home</li>
-                        <li class="header__nav__link">about us</li>
-                        <li class="header__nav__link">service</li>
-                        <li class="header__nav__link">products</li>
-                        <li class="header__nav__link">pricing</li>
-                        <li class="header__nav__link">api</li>
-                        <li class="header__nav__link">supports</li>
-                        <li class="header__nav__link">contact us</li>
-                    </ul>
-
-                </div>
-                <div class="try_now_btn">
-                    <p class="try_now_btn_text">Try Now</p>
-                </div>
+            <div class="header_wrapper">
+                <a href="" target="_blank" class="header_logo_box"> <img class=""
+                        src="./images/tech-startup-logo-design-toronto-featured.png" alt=""></a>
+                <ul class="header_nav inactive" id="top_nav">
+                    <li class="header__nav__link"><a href="#">Home</a> </li>
+                    <li class="header__nav__link"><a href="#">about us</a> </li>
+                    <li class="header__nav__link"><a href="#">service</a> </li>
+                    <li class="header__nav__link"><a href="#">products</a> </li>
+                    <li class="header__nav__link"><a href="#">pricing</a> </li>
+                    <li class="header__nav__link"><a href="#">api</a></li>
+                    <li class="header__nav__link"><a href="#">supports</a></li>
+                    <li class="header__nav__link"><a href="#">contact us</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="burger_icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                <a href="#" class="btn_primary  btn--primary--text  ">Try Now</a>
             </div>
         </header>
-        <article class="hero  hero_section hero_bg">
-            <div class="hero_container">
+        <section class="hero  hero_section " id="top">
+            <div class="hero_content_box">
                 <h1>Get help about our products, basic knowledge and more</h1>
                 <div class="input_container ">
-                    <div class="hero_input_box">
+                    <div class="hero_input_box hero--input_bg">
                         <input type="text" placeholder="Get help about our products, basic knowledge and more">
                         <div class="search_button">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search search--btn_text"></i>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </article>
+        </section>
         <article class="article_container">
             <div class="article_box border--bottom border--right">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/general.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">General</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--bottom border--right">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/installation.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">Implementation</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--bottom border--right">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/tutorial.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">Tutorial</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--bottom">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/basic-knowledge.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">Basic Knowledge</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--right">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/how-to.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">How-To</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--right">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/api.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">API-Reference</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box border--right ">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/general.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">Troubleshooting</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
             </div>
             <div class="article_box">
-                <div class="article_img_box">
+                <figure class="article_img_box">
                     <img src="./images/costume-service.png" class="article_img" alt="">
-                </div>
+                </figure>
                 <h4 class="article_title">Costumer service</h4>
                 <p class="article_para_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                 </p>
@@ -120,16 +116,22 @@
         </article>
         <section class="request_call_section">
             <div class="request_box">
-                <h1>Didn’t find what you are looking for?</h1>
+                <p class="request_box_heading">Didn’t find what you are looking for?</p>
                 <p class="req_small_text">Don’t worry! Let’s chat with US</p>
-                <div class="req_chat_btn">
-                    <p class="req_chat_text">REQUEST A CHAT</p>
-                </div>
+                <a href="" class="btn_primary btn--primary--text">REQUEST A CHAT</a>
             </div>
+            <a href="#top" class="back_to_top"><i class="fa fa-angle-up"></i></a>
             <div class="copyright_wrapper">
                 <p class="copyright_text">Copyright 2018 Code&CO ©. All rights Reserved</p>
             </div>
         </section>
     </main>
+    <script>
+        function myFunction(){
+            const addClass = document.getElementById("top_nav")
+            addClass.classList.toggle("active");
+        }
+    </script>
 </body>
+
 </html>
